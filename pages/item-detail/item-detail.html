@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ item.name | translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
+  </div>
+  <div class="item-detail" padding>
+    <h2>{{item.name | translate}}</h2>
+    <p>{{item.about | translate}}</p>
+  </div>
+</ion-content>

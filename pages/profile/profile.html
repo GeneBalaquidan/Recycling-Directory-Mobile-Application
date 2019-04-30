@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>profile</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="bg">
+	<form method="POST" (submit)="createProfile()" class="slider" center>
+		<ion-list>
+			<ion-item>
+	          <ion-label floating color="dark" translate="First Name"></ion-label>
+	          <ion-input type="text" size="26" placeholder="\t \t \t Lina" required='' [(ngModel)]="profile.firstName" name="fname"></ion-input>
+	        </ion-item>
+	        <ion-item>
+	          <ion-label floating color="dark" translate="Last Name"></ion-label>
+	          <ion-input type="text" size="26" placeholder="\t \t \t Inverse" required='' [(ngModel)]="profile.lastName" name="lname"></ion-input>
+	        </ion-item>
+	        <ion-item>
+	            <ion-label  floating color="dark" translate="Username">Username</ion-label>
+	            <ion-input type="text" size="26" placeholder="\t \t \t Slayer" required='' [(ngModel)]="profile.username" name="username"></ion-input>
+	        </ion-item>
+	        <div padding>
+	           <button ion-button block class="signup_button">{{ 'Set Up Profile' | translate }}</button>
+	        </div>
+	    </ion-list>
+	</form>
+</ion-content>

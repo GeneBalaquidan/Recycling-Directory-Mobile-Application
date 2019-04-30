@@ -1,0 +1,83 @@
+page-tutorial {
+  .bgTut{
+    position: relative;
+    background: url('../assets/img/BG/bg1.jpg') no-repeat transparent;
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: animatedBackground 40s linear infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+
+  .tamad-intro{
+    color: rgb(0,250,0);
+  }
+
+  .navi{
+    height: 10px;
+  }
+
+  .slider{
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: animatedLogo 1s linear;
+
+  }
+
+  @keyframes animatedLogo{
+    from { top: 800px; }
+    to { top: 100px; }
+  }
+
+  .slide-zoom {
+    height: 100%;
+  }
+
+  .slide-title {
+    margin-top: 2.8rem;
+    color: rgb(0,255,0);
+    opacity: 1;
+  }
+
+  .slide-desc{
+    color: rgb(0,220,0);
+    opacity: 1;
+  }
+
+  .slide-image {
+    max-height: 40%;
+    max-width: 60%;
+    margin: 36px 0;
+    background: transparent;
+    opacity: 1;
+    border-radius: 100%;
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  p {
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #60646B;
+
+    b {
+      color:"black";
+    }
+  }
+.palaso{
+  color: green;
+}
+
+}

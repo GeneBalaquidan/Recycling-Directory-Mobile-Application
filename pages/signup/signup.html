@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg">>
+  <ion-scroll scrollbar-x="false" scrollbar-y="false"></ion-scroll>
+  <table border="1" width="86%" height="90%" class="splash-bg">
+    <form method="POST" (submit)="doSignup(user,profile)" class="slider" center>
+        <H6 class="tb-head">{{'SIGN-UP FORM' | translate}}</H6>
+      <ion-list> 
+         <ion-item>
+            <ion-label  floating color="dark">{{ 'Email' | translate }}</ion-label>
+            <ion-input type="email" size="26" placeholder="\t \t \t Lina@gmail.com" required='' [(ngModel)]="user.email" name="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label  floating color="dark">{{ 'Password' | translate }}</ion-label>
+            <ion-input type="password"  size="26" placeholder="\t \t \t ********" required='' [(ngModel)]="user.password" name="password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating color="dark" translate="First Name"></ion-label>
+            <ion-input type="text" size="26" placeholder="\t \t \t Lina" required='' [(ngModel)]="profile.firstName" name="fname"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating color="dark" translate="Last Name"></ion-label>
+            <ion-input type="text" size="26" placeholder="\t \t \t Inverse" required='' [(ngModel)]="profile.lastName" name="lname"></ion-input>
+          </ion-item>
+        <div padding>
+           <button ion-button block class="signup_button">{{ 'SIGNUP_BUTTON' | translate }}</button>
+        </div>
+      </ion-list>
+    </form>
+  </table>
+</ion-content>

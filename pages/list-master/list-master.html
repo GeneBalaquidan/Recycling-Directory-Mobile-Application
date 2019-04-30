@@ -1,0 +1,29 @@
+<ion-header class="head">
+  <ion-navbar>
+      <div class="userx">
+      {{'USER:' | translate}}
+      {{(profileData | async)?.firstName}}
+      {{(profileData | async)?.lastName}}
+      </div>
+      <ion-buttons end>
+        <button ion-button icon-end clear (click)="signout()" class="exit">{{ 'SIGN-OUT' | translate}}
+        <ion-icon name="ios-exit"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg">   
+   <h3 class="rec">{{"RECYCLABLES" || translate}}</h3>
+   <ion-list class="lista">
+        <ion-item-sliding class="lista" *ngFor="let item of currentItems">
+          <button class="lizta" ion-item icon-end (click)="openItem(item)">
+            <ion-avatar class="avatarz"  item-start>
+              <img [src]="item.profilePic" />
+            </ion-avatar>
+            <h2 class="avatarz">{{item.name | translate}}</h2>
+            <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+            <ion-icon item-end name="md-open"></ion-icon>
+          </button>
+        </ion-item-sliding>
+      </ion-list>
+  </ion-content>

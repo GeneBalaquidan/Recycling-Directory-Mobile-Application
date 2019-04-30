@@ -1,0 +1,76 @@
+page-list-master {
+  .head{
+    background-color: transparent;
+  }
+
+  .bg{
+  background-image: url('../../assets/img/p1.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  background-attachment:fixed;
+  height: 100%;
+  margin-top: 0px;
+
+  }
+
+  .exit{
+      margin-left: 200px;
+      background-color: transparent;
+      color: rgb(50,50,255);
+      border:1px solid rgb(50,50,255);;
+      height: 35px;
+      font-size: 14px;
+  
+  }
+
+  .lista{
+      background-color: transparent;
+      color: #ffffff;
+      border:1px solid #ffffff;
+      font-size: 16px;
+  }
+  
+  .lizta{
+      margin-top: 5px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      background-color: transparent;
+      color: #ffffff;
+      border:1px solid #ffffff;
+      height: 45x;
+      font-size: 18px;
+      text-align: center;
+  }
+
+  .rec{
+      margin-top: 20px;
+      background-color: transparent;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      height: 30px;
+      font-size: 20px;
+      text-align: center;
+  }
+  
+  .avatarz{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+
+  .userx{
+    background-color: transparent;
+    color: rgb(50,50,255);
+    border:1px solid rgb(50,50,255);;
+    height: 35px;
+    font-size: 14px;
+    text-align: center;
+
+    &.txt{
+      margin-top: 15px;
+    }
+  }
+
+}

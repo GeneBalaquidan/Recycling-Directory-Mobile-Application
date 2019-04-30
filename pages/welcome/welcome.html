@@ -1,0 +1,25 @@
+<ion-header>
+  <title></title>
+</ion-header>
+<ion-content class="splash-bg" scroll="false" style="background-image: url('assets/img/p1.jpg');background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed;">
+  <div  class="slider">
+    <div class="splash-info">
+      <div class="splash-logo"></div>
+    </div>
+    <div padding>
+      <button ion-button block (click)="signup()" class="signup">{{ 'Sign-up' | translate }}</button>
+      <button ion-button block (click)="login()" class="login">{{ 'Sign-in' | translate }}</button>
+      <button ion-button full icon-end (click)="loginWithFB()" class="fb-sign-in">{{ 'Sign-in with' | translate }}
+      <ion-icon name="logo-facebook"></ion-icon>
+      </button>
+      <ion-card *ngIf="userData">
+        <ion-card-header>{{ userData.username }}</ion-card-header>
+        <img [src]="userData.picture" />
+        <ion-card-content>
+          <p>Email: {{ userData.email }}</p>
+          <p>First Name: {{ userData.first_name }}</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

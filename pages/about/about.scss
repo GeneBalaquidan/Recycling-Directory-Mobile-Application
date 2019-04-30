@@ -1,0 +1,72 @@
+page-about {
+
+	.head-bg{
+		background-color: transparent;
+		height: 150px;
+    margin-top: 30px;
+    margin-left: 40px; 
+    background: url('../assets/img/Earth/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 128px;
+	}
+
+  	.content-bg{
+      background-image: url('../../assets/img/p1.jpg');
+      background-repeat:no-repeat;
+      background-size:100% 100%;
+      background-attachment:fixed;
+      height: 100%;
+      margin-top: 0px;
+      margin-bottom: 30px;
+  	}
+
+
+  	.info{
+      background-color: transparent;
+  		font-size: 15px;
+   		font-weight: bold;
+  		color: rgb(255,255,255);
+      width: 200px;
+      margin-left: 40px;
+   }
+
+  	.created{
+      font-size: 10px;
+      font-weight: bold;
+      margin-top: 80px;
+      margin-left: 160px;
+      color: rgb(255,255,255);
+ 	 }
+
+   .creator1{
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    margin-left: 160px;
+   }
+
+   .creator2{
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    margin-left: 160px;
+   }
+
+   .creator3{
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    margin-left: 160px;
+   }
+
+   .section{
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    margin-left: 160px;
+
+    }
+
+}

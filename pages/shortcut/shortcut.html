@@ -1,0 +1,60 @@
+<ion-header>
+	<title></title>
+</ion-header>
+<ion-content class="shortcut-bg">
+	<table border="1" width="95%" height="70%" class="splash-bg">
+		<form>
+			<ion-list>
+				<ion-item class="item1">
+					<ion-label fixed>{{'Location' | translate}}</ion-label>
+					<ion-input [readonly]="isReadonly()" type="text" [(ngModel)]="cut.location" name="location"></ion-input>
+				</ion-item>
+				<ion-item class="item2">
+					<ion-button end>
+						<button ion-button icon-only class="shortcut1">
+							<ion-icon name="md-star"></ion-icon>
+						</button>
+					</ion-button>
+					<ion-label fixed>{{'Recyclable'}}</ion-label>
+					<ion-input [readonly]="isReadonly()" type="text" width="70%" [(ngModel)]="cut.recyclable1" name="recyclable1"></ion-input>
+				</ion-item>
+				<ion-item class="item3">
+					<ion-button end>
+						<button ion-button icon-only class="shortcut2">
+							<ion-icon name="md-star"></ion-icon>
+						</button>
+					</ion-button>
+						<ion-label fixed>{{'Recyclable' | translate}}</ion-label>
+						<ion-input [readonly]="isReadonly()" type="text" [(ngModel)]="cut.recyclable2" name="recyclable2"></ion-input>
+				</ion-item>
+				<ion-item class="item4">
+					<ion-button end>
+						<button ion-button icon-only class="shortcut3">
+							<ion-icon name="md-star"></ion-icon>
+						</button>
+					</ion-button>
+						<ion-label fixed>{{'Recyclable' | translate}}</ion-label>
+						<ion-input [readonly]="isReadonly()" type="text" [(ngModel)]="cut.recyclable3" name="recyclable3"></ion-input>
+				</ion-item>
+				<ion-item class="item5">
+					<ion-button end>
+						<button ion-button icon-only class="shortcut4">
+							<ion-icon name="md-star"></ion-icon>
+						</button>
+					</ion-button>
+						<ion-label fixed>{{'Recyclable' | translate}}</ion-label>
+						<ion-input [readonly]="isReadonly()" type="text" [(ngModel)]="cut.recyclable4" name="recyclable4"></ion-input>
+				</ion-item>
+				<ion-item class="item6">
+					<ion-button end>
+						<button ion-button icon-only class="shortcut5">
+							<ion-icon name="md-star"></ion-icon>
+						</button>
+						<ion-label fixed>{{'Recyclable' | translate}}</ion-label>
+						<ion-input [readonly]="isReadonly()" width="70%" type="text" [(ngModel)]="cut.recyclable5" name="recyclable5"></ion-input>
+					</ion-button>
+				</ion-item>
+			</ion-list>
+		</form>
+	</table>
+</ion-content>

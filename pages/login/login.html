@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content style="background-image: url('assets/img/p1.jpg');background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed;">>
+  <table border="1" width="86%" height="30%" class="splash-bg">
+    <form (submit)="doLogin(user)" class="slider">
+      <H6 class="tb-head" translate="sign-in"></H6>
+      <ion-list>
+      <div padding="10">
+          <ion-item>
+            <ion-label  floating color="dark">{{ 'Email' | translate }}</ion-label>
+            <ion-input type="email" size="26" placeholder="\t \t \t Lina@gmail.com" required='' [(ngModel)]="user.email" name="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating color="dark">{{ 'Password' | translate }}</ion-label>
+            <ion-input type="password" placeholder="\t \t \t ********" [(ngModel)]="user.password" name="password"></ion-input>
+          </ion-item>
+          </div>
+          <div padding>
+            <button ion-button block class="login1">{{ 'Sign-in' | translate }}</button>
+          </div>
+        </ion-list>
+    </form>
+  </table>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header no-shadow background="">
+  <ion-navbar>
+      <div class="tamad-intro">
+      {{ 'Sawa ka na bang maghintay? I-click ang ' | translate }}
+      </div>
+      <ion-buttons end *ngIf="showSkip">
+        <button ion-button (click)="startApp()" color="primary">{{ 'TUTORIAL_SKIP_BUTTON' | translate}}</button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce class="splash-bg">
+  <ion-slides pager="true" (ionSlideWillChange)="onSlideChangeStart($event)" class="slider">
+    <ion-slide *ngFor="let slide of slides">
+      <img circle [src]="slide.image" class="slide-image" />
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p class="slide-desc" [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/Earth/sad.jpg" class="slide-image"/>
+      <h2 class="slide-title" center>{{ 'Handa ka ng gamitin ang eco-saver?' | translate }}</h2>
+      <button ion-button icon-end large clear class="palaso" (click)="startApp()" center>
+        {{ 'Tumuloy' | translate }}
+        <ion-icon name="md-arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
